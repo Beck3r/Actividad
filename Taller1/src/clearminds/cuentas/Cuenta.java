@@ -5,6 +5,7 @@ public class Cuenta {
 	private String tipo;
 	private float saldo;
 	public Cuenta(String id) {
+		this.id=id;
 		this.tipo = "A";
 	}
 	public Cuenta(String id, String tipo, float saldo) {
@@ -42,13 +43,15 @@ public class Cuenta {
 	}
 	
 	public void imprimirConMiEstilo() {
+		System.out.println(" ");
 		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
-		System.out.println("|-|-|-|-|-|-|-|-CUENTA BANCARIA-|-|-|-|-|-|-|-|-");
+		System.out.println("               -CUENTA BANCARIA-");
 		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
 		System.out.println(".-NUMERO DE CUENTA: "+id);
 		System.out.println(".-Tipo: "+tipo);
 		System.out.println(".-Saldo: USD "+saldo);
 		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+		System.out.println(" ");
 	}
 	
 }
